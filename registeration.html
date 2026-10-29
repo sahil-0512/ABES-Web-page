@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+</head>
+<body>
+    <center>
+        <h2>Registration Form</h2>
+        <form>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <td>Full Name:</td>
+                    <td>
+                        <input type="text" name="fullname" required 
+                               minlength="3" maxlength="50" 
+                               placeholder="Enter full name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" name="email" required 
+                               placeholder="Enter email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td>
+                        <input type="text" name="username" required 
+                               minlength="4" maxlength="20" 
+                               pattern="[A-Za-z0-9]+" 
+                               placeholder="Letters and numbers only">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td>
+                        <input type="password" name="password" required 
+                               minlength="6" maxlength="20" 
+                               placeholder="Minimum 6 characters">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td>
+                        <input type="password" name="confirm_password" required 
+                               minlength="6" maxlength="20" 
+                               placeholder="Confirm password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td>
+                        <input type="tel" name="phone" required 
+                               pattern="[0-9]{10}" 
+                               maxlength="10" 
+                               placeholder="10 digit number">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>All fields are required</p>
+    </center>
+</body>
+</html>
